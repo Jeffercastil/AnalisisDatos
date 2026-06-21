@@ -1,0 +1,14 @@
+Tu rutina a partir de hoy 🔄
+¡Ya tienes el puente construido! De ahora en adelante, tu dinámica para no perder nada será esta:
+
+Cuando termines de programar en Deepin (o Windows) y quieras guardar:
+
+Bash
+git add .
+git commit -m "Guardando mis últimos avances"
+git push origin main
+Cuando enciendas la otra PC para seguir trabajando:
+Abres la terminal en la carpeta del proyecto y descargas lo último de la nube:
+
+Bash
+git pull origin main
