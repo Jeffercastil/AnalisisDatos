@@ -12,3 +12,23 @@ Abres la terminal en la carpeta del proyecto y descargas lo último de la nube:
 
 Bash
 git pull origin main
+
+
+  Ahora podés decir:
+
+  ▎ "Usa HERO-01 + CTA-01 + PRICE-01 para una landing de marketplace de iconos"
+
+  ▎ "Crea un portfolio minimal con [[portfolio]] y dark mode"
+
+  ▎ "Genera una gallery estilo supahero con masonry y filtro por categoría"
+
+  La IA lee el vault, identifica los IDs en AI-Reference.md, busca los componentes en Components/, aplica los tokens
+  de Design-System/Tokens.md y respeta la filosofía de Design-System/Master-Design-System.md.
+
+  📌 Notas importantes
+
+  - Aclaración sobre supahero.io: NO es marketplace de avatares AI — es librería de hero sections de websites reales.
+  - Aclaración sobre freefaces.gallery: NO es de avatares/fotos — es catálogo curado de tipografías gratuitas.
+  - El sistema soporta HTML semántico + Tailwind + React + Next.js + Shadcn UI en cada componente.
+  - Cada componente incluye Función, Casos de uso, Variantes, Complejidad, Prioridad, Inspiración, Cómo adaptarlo sin
+  copiar e Implementación sugerida en 5 stacks.
