@@ -13,7 +13,27 @@ Abres la terminal en la carpeta del proyecto y descargas lo último de la nube:
 Bash
 git pull origin main
 
+# 1. Guarda temporalmente tus cambios locales
+git stash
 
+# 2. Descarga la versión actualizada de GitHub
+git pull origin main
+
+# 3. Vuelve a aplicar tus cambios locales sobre lo actualizado
+git stash pop
+
+Opción 2: Borrar tus cambios locales y aceptar los de WindowsUsa esta opción si los cambios de Linux no te importan y prefieres quedarte exactamente con lo que subiste desde Windows.bash# 1. Descarta por completo los cambios locales de ese archivo
+git checkout -- .gitignore
+
+# 2. Descarga la actualización sin errores
+git pull origin main
+Use code with caution.Opción 3: Guardar los cambios de Linux en un nuevo commitUsa esta opción si quieres conservar tus cambios locales en el historial antes de combinarlos con los de Windows.bash# 1. Registra el cambio local en Linux
+git add .gitignore
+git commit -m "Actualizar gitignore local en Linux"
+
+# 2. Trae los cambios de Windows (se fusionarán automáticamente)
+git pull origin main
+Use code with caution.¿Por qué pasa esto entre Windows y Linux?Finales de línea (CRLF vs LF): Windows y Linux manejan los saltos de línea de forma distinta. A veces, el simple hecho de abrir el archivo en Linux hace que Git detecte un cambio invisible en el formato del texto.Modificaciones reales: Es posible que hayas configurado alguna ruta o carpeta en Linux que no existe en Windows, alterando el archivo.
   Ahora podés decir:
 
   ▎ "Usa HERO-01 + CTA-01 + PRICE-01 para una landing de marketplace de iconos"
