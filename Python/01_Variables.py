@@ -38,3 +38,28 @@ print("Tu nombre es:",nameInput,", tu apellido es: ",surnameInput, " y por ultim
 
 
 #ingreso de datos con validación cuando el campo es vacio
+while True:
+       nombre = input("Ingrese su nombre: ")
+       if nombre !="":
+              break
+       print("El nombre no puede estar vacio")
+       
+while True:
+       apellido = input("Ingrese su apellido: ")
+       if apellido !="":
+              break
+       print("El apellido no puede estar vacio")
+
+while True:
+       alias = input("Ingrese su alias: ")
+       if alias !="":
+              break
+       print("El alias no puede estar vacio")
+       
+while True:
+       correo = input("Ingrese su correo: ")
+       if correo !="":
+              break
+       print("El correo no puede estar vacio")
+       
+print(f"\nDatos registrados:\nNombre: {nombre}\nApellido: {apellido}\nAlias: {alias}\nCorreo: {correo}")
